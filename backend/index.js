@@ -6,7 +6,13 @@ const multer = require("multer");
 const path = require("path");
 const cors = require("cors");
 const port = process.env.PORT || 4000;
+const Insurance = require("./models/insurance"); // Correct path to the model
+const insuranceRoutes = require("./routes/insuranceRoutes"); // Import insurance routes
 
+app.use('/api/insurance', insuranceRoutes);
+
+
+app.use('/api/insurance', insuranceRoutes);
 app.use(express.json());
 app.use(cors());
 
@@ -245,3 +251,4 @@ app.listen(port, (error) => {
   if (!error) console.log("Server Running on port " + port);
   else console.log("Error : ", error);
 });
+

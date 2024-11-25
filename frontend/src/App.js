@@ -14,6 +14,8 @@ import Blogs from "./Pages/Blog/blogs";
 import TermsAndConditions from "./Pages/TermsAndConditions";
 import Aboutus from "./Pages/aboutus/aboutus";
 import Contactus from './Pages/contactus/contactus';
+import Insurance from './Pages/insurance/Insurance';
+
 
 export const backend_url = 'http://localhost:4000';
 export const currency = '₹';
@@ -39,7 +41,7 @@ function App() {
           <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
           <Route path="/aboutus" element={<Aboutus />} />
           <Route path="/contactus" element={<Contactus />} />
-
+          <Route path="/insurance" element={<Insurance />} />
 
         </Routes>
         <Footer />
